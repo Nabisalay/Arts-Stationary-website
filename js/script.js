@@ -28,7 +28,7 @@ $(document).ready(function(){
         })
 }
 // this is for product on the shop page 
-if(window.location.href.includes('arts-stationary-shop/shop.php')) {
+if(window.location.href.includes('/shop.php')) {
     let category = $('#category').val();
     let parentElement = '#product-conductor';
     let url = "getdata.php";
@@ -98,7 +98,7 @@ function updateData(url, data, cbfunction) {
     }) 
 }
 
-if(window.location.href.includes('arts-stationary-shop/cart.php')) {
+if(window.location.href.includes('/cart.php')) {
     function fetchCart() {
         let parentElement = '#cartTablebody';
         let url = "getdata.php";
@@ -128,7 +128,7 @@ if(window.location.href.includes('arts-stationary-shop/cart.php')) {
     });
 }
 
-if(window.location.href.includes('arts-stationary-shop/checkout.php')) {
+if(window.location.href.includes('/checkout.php')) {
     function productForOrder() {
         let parentElement = '#cartTablebody';
         let url = "getdata.php";
@@ -177,7 +177,7 @@ $(document).on('click', '#userlogout', function() {
 });
 
 
-if(window.location.href.includes('arts-stationary-shop/ordered.php')) {
+if(window.location.href.includes('/ordered.php')) {
     function OrderedProducts() {
         let parentElement = '#orderedProducts';
         let url = "getdata.php";
@@ -199,7 +199,7 @@ if(window.location.href.includes('arts-stationary-shop/ordered.php')) {
         updateData("homeupdate.php", data, OrderedProducts)
     });
 }
-if(window.location.href.includes('arts-stationary-shop/contact.php')) {
+if(window.location.href.includes('/contact.php')) {
  $('#contactBtn').on('click', function() {
    let fullNameRegex = /^[A-Z][a-z]*( [A-Z][a-z]*)*$/;
    let emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
